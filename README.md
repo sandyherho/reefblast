@@ -1,4 +1,4 @@
-# Idealized blast-fishing shock loading beneath gas-laden coral canopies
+# Supplementary Materials: Idealized blast-fishing shock loading beneath gas-laden coral canopies
 
 [![DOI](https://zenodo.org/badge/1380313579.svg)](https://doi.org/10.5281/zenodo.22884080)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org)
