@@ -1,0 +1,40 @@
+Figure notes and tabulated values
+=================================
+
+purpose
+-------
+  Figures carry no in-panel annotation. Values that would otherwise be
+  printed inside an axes are recorded here. Every panel is also
+  available as CSV under outputs/data.
+
+figure 5, damage regimes
+------------------------
+  Spall standoff of the 12 cm plate rises from 1.75 m at alpha = 1e-05
+  to 5.70 m at alpha = 2.73e-02. Crush standoff of the same plate
+  falls from 3.37 m to 2.51 m. Plate thicknesses are realised to
+  within one skeleton cell; see the log printed by fig05_regimes.py.
+  d (m) | spall standoff at alpha min | at alpha max
+   0.06 |                0.000 |        1.536
+   0.09 |                0.000 |        4.096
+   0.12 |                1.747 |        5.701
+   0.15 |                2.894 |        6.623
+
+figure 6, diel cycle
+--------------------
+  alpha_max = 0.001: spall standoff 1.75 to 1.95 m, crush 3.31 to 3.37 m
+  alpha_max = 0.01: spall standoff 1.75 to 4.29 m, crush 2.93 to 3.37 m
+  alpha_max = 0.03: spall standoff 1.75 to 5.74 m, crush 2.53 to 3.37 m
+
+figure 7, two-dimensional runs
+------------------------------
+  percentile | ratio lo | ratio hi | compression/p_ref lo | hi
+          50 |    0.137 |    0.193 |                0.555 | 0.329
+          90 |    0.216 |    0.348 |                0.639 | 0.444
+          99 |    0.314 |    0.512 |                0.703 | 0.555
+
+figure 4, bubble compaction
+---------------------------
+  Vmin_over_Veq_P3: 0.3202 to 1.4047
+  Vmin_over_Veq_P10: 0.1192 to 0.6874
+  Vmin_over_Veq_P30: 0.0535 to 0.1462
+

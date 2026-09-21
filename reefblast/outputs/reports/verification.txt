@@ -1,0 +1,43 @@
+Numerical verification
+======================
+
+independent algorithms
+----------------------
+  Three layered solvers share no code path: the Goupillaud
+  equal-travel-time scattering scheme, the closed-form ray sum, and
+  frequency-domain propagator matrices inverted by FFT. Keller-Miksis
+  is integrated with DOP853 and cross-checked with Radau. The
+  two-dimensional solver is checked by self-convergence in a
+  quasi-one-dimensional column.
+
+measured residuals
+------------------
+  Goupillaud vs closed-form ray sum, max abs ........ 2.220e-16
+  Goupillaud vs transfer-matrix FFT, max abs ....... 4.441e-16
+  impulse invariant, Goupillaud, relative .......... 2.220e-16
+  impulse invariant, ray sum, relative ............. 2.220e-16
+  impulse invariant, transfer matrix, relative ..... 2.220e-16
+  peak a_N closed form vs Goupillaud, abs .......... 0.000e+00
+  plate first-reflection profile, max abs .......... 2.220e-16
+  Hugoniot to Wood, slope in dp .................... 0.9998
+  Hugoniot to Wood, relative at dp = 1e-4 p0 ....... 3.925e-05
+  FDTD successive differences, relative, dx = 4, 2, 1, 0.5 mm:
+      4.239e-02, 7.019e-03, 3.996e-03
+  FDTD observed orders ............................. 2.594, 0.813
+  FDTD impulse invariant error, dx = 4, 2, 1, 0.5 mm:
+      6.780e-06, 7.286e-06, 7.419e-06, 7.453e-06
+  Keller-Miksis frequency shift, eps = 3e-3 .. 1e-1:
+      1.767e-07, 1.952e-06, 1.727e-05, 1.812e-04
+  Keller-Miksis shift slope (expected 2) ........... 1.9779
+  period, DOP853 vs Radau, relative ................ 4.934e-13
+  minimum radius, DOP853 vs Radau, relative ........ 1.435e-12
+
+reading the FDTD numbers
+------------------------
+  The first observed order exceeds two because the coarsest grid is
+  pre-asymptotic. The second is close to one, as expected for
+  arithmetic averaging of buoyancy across discontinuous material
+  interfaces. The impulse error does not fall with dx: it is set by
+  truncating the reverberation tail at the end of the integration
+  window, not by the discretization.
+

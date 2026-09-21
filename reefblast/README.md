@@ -1,6 +1,5 @@
-# Supplementary Materials: Idealized blast-fishing shock loading beneath gas-laden coral canopies
+# Idealized blast-fishing shock loading beneath gas-laden coral canopies
 
-[![DOI](https://zenodo.org/badge/1380313579.svg)](https://doi.org/10.5281/zenodo.22884080)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org)
 [![NumPy](https://img.shields.io/badge/NumPy-%E2%89%A51.24-013243?style=flat-square&logo=numpy&logoColor=white)](https://numpy.org)
 [![SciPy](https://img.shields.io/badge/SciPy-%E2%89%A51.10-8CAAE6?style=flat-square&logo=scipy&logoColor=white)](https://scipy.org)
@@ -9,7 +8,7 @@
 
 Supplementary code for a reduced-order model of how free gas in a coral
 canopy changes the loading that an improvised fishing charge delivers to
-reef skeleton.
+reef skeleton. Analysis only: no field data, no calibration.
 
 **Authors:** Sandy H. S. Herho, Rizki D. Permana, Iwan P. Anwar,
 Alfita P. Handayani, Faruq Khadami, Karina A. Sujatmiko, Dasapta E. Irawan
@@ -26,7 +25,7 @@ Alfita P. Handayani, Faruq Khadami, Karina A. Sujatmiko, Dasapta E. Irawan
     <td align="center"><img src="outputs/animations/anim05_thickness.gif" height="240" alt="critical thickness"></td>
   </tr>
   <tr>
-    <td align="center"><sub>Reach of one charge over a day</sub></td>
+    <td align="center"><sub>Damage map over a day (radius: standoff, angle: plate thickness)</sub></td>
     <td align="center"><sub>Forty canopy bubbles under one pulse</sub></td>
     <td align="center"><sub>Critical plate thickness as range closes</sub></td>
   </tr>
@@ -59,16 +58,18 @@ A plate of thickness $`d`$ carries first-reflection tension if and only if
 \frac{Z_c}{Z_s} < \tanh\delta, \qquad \delta = \frac{d}{c_s\theta}, \qquad d_c = c_s\theta\,\mathrm{artanh}\frac{Z_c}{Z_s}.
 ```
 
-| 1 kg TNT equivalent | value |
+| 1 kg TNT equivalent, charge directly overhead | value |
 | :-- | :-- |
-| critical thickness, water-backed, R = 2 to 10 m | 10.7 to 15.3 cm |
+| critical thickness, water-backed, standoff 2 to 10 m | 10.7 to 15.3 cm |
 | critical thickness, void fraction 3e-2 | 3.5 to 5.3 cm |
-| spall radius, 12 cm plate, void fraction 1e-5 to 2.7e-2 | 1.75 to 5.70 m |
-| crush radius, same plate | 3.37 to 2.51 m |
-| noon spall reach, peak void fraction 1e-2 / 3e-2 (night 0.9 m) | 4.1 / 5.6 m |
+| spall standoff, 12 cm plate, void fraction 1e-5 to 2.7e-2 | 1.75 to 5.70 m |
+| crush standoff, same plate | 3.37 to 2.51 m |
+| noon spall standoff, peak void fraction 1e-2 / 3e-2 (night 1.75 m) | 4.3 / 5.7 m |
 | 2D median tension-to-compression ratio, 1e-5 to 1e-2 | 0.14 to 0.19 |
 
-Every canopy effect requires void fractions of order 1e-3 or more.
+Every canopy effect requires void fractions of order 1e-3 or more. Failure
+first occurs at depth $`x^* = (c_s\theta/2)\ln[1/(|R_b| - \sigma_t/P_s)]`$
+behind the back face, which sets the spall scab thickness.
 
 ## Verification
 
@@ -106,9 +107,23 @@ outputs/     figures (PDF, 600 dpi PNG), animations (GIF),
 
 ## Limitations
 
-The canopy void fraction is a free parameter; no measurement in a coral
-canopy is known to the authors. Normal incidence, a frozen secant canopy
-impedance, and a shear-free skeleton are assumed, and skeletal constants
-are illustrative, so every threshold scales with them. The 2D line source
-is exact only in the far field and is used for amplitude-free ratios,
-never for thresholds. Details are in `outputs/reports/open_items.txt`.
+- **Void fraction** is a free parameter; no measurement in a coral canopy
+  is known to the authors.
+- **Geometry**: all ranges are vertical standoffs at normal incidence.
+  Horizontal radii are not computed, because beyond the 30° critical angle
+  no compressional wave enters an acoustic skeleton.
+- **Relaxed canopy**: the secant impedance assumes bubbles equilibrate
+  within the shock, which Figure 4 shows they do not, so canopy effects are
+  likely upper bounds.
+- **Cavitation** above the canopy is omitted; the impulse invariant holds
+  for the linear model only.
+- **Strength and source**: static strength and Cole constants fitted to
+  large charges are used; spall standoffs are likely upper bounds.
+- **2D runs** use a line source exact only in the far field and are used
+  only for amplitude-free ratios.
+
+Details are in `outputs/reports/open_items.txt`.
+
+## License
+
+MIT
