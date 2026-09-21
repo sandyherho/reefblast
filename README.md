@@ -111,7 +111,3 @@ impedance, and a shear-free skeleton are assumed, and skeletal constants
 are illustrative, so every threshold scales with them. The 2D line source
 is exact only in the far field and is used for amplitude-free ratios,
 never for thresholds. Details are in `outputs/reports/open_items.txt`.
-
-## License
-
-MIT
