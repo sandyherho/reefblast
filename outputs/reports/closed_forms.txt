@@ -1,0 +1,58 @@
+Closed forms
+============
+
+bubbly Hugoniot
+---------------
+  Per unit mass, v0 - v1 = v_l0 dp/K_l + v_g0 [1 - (p0/(p0 +
+  dp))^(1/kappa)] with v_l0 = 1/rho_l and v_g0 = alpha/((1 - alpha)
+  rho_l). The Rayleigh line gives U^2 = v0^2 dp/(v0 - v1) and the
+  secant impedance Z_c = U/v0. As dp -> 0, U tends to the Wood speed;
+  the departure is linear in dp (measured slope in the verification
+  report). The gas and liquid compliances are equal at p* = alpha
+  K_l/(1 - alpha). To leading order in p0/p* the shock speed at p* is
+  c_l/(sqrt(2)(1 - alpha)), so the curves for alpha >= 1e-3 all cross
+  p* near U/c_l = 0.72.
+
+crossover table (p0 at 5 m depth)
+---------------------------------
+  alpha    |  p* (MPa) | U(p*)/c_l | c_W/c_l  | R*(1 kg) m
+  ----------------------------------------------------------
+   1.0e-05 |    0.0231 |   0.95512 |  0.94974 |   930.078
+   1.0e-04 |    0.2306 |   0.82112 |  0.69233 |   121.207
+   1.0e-03 |    2.3086 |   0.73330 |  0.29046 |    15.784
+   3.0e-03 |    6.9396 |   0.72089 |  0.17279 |     5.960
+   1.0e-02 |   23.2955 |   0.71917 |  0.09598 |     2.041
+   3.0e-02 |   71.3273 |   0.73123 |  0.05615 |     0.758
+
+transmission through a canopy
+-----------------------------
+  For water | canopy | skeleton half-space and a step-exponential
+  incident pulse, the transmitted pressure is T1 T2 sum_n q^n p_i(t -
+  tau - 2 n tau), q = R_cs R_cw. Just after the N-th arrival it equals
+  T1 T2 P a_N with a_N = (r^(N+1) - q^(N+1))/(r - q), r = exp(-2
+  tau/theta). The transmitted impulse is 2 Z_bot/(Z_bot + Z_w) times
+  the incident impulse for any lossless stack between water and a
+  half-space of impedance Z_bot; for a skeleton half-space this is
+  1.514792899408.
+
+spall onset
+-----------
+  Behind a plate of thickness d backed by impedance Z_c, the
+  first-reflection stress at distance x from the back face is P_s (R_b
+  + exp(-2 x/(c_s theta))), R_b = (Z_c - Z_s)/(Z_c + Z_s). Its tensile
+  maximum over the plate is P_s (|R_b| - exp(-2 delta)), delta =
+  d/(c_s theta), which is positive if and only if Z_c/Z_s <
+  tanh(delta). The critical thickness is therefore d_c = c_s theta
+  artanh(Z_c/Z_s).
+
+  R (m) | theta (ms) | P (MPa) | d_c water (cm) | d_c at alpha = 1e-3, 1e-2, 3e-2 (cm)
+  ----------------------------------------------------------------------------
+    2.0 |     0.1077 |  23.833 |         10.731 | 10.225,  7.546,  5.281
+    5.0 |     0.1318 |   8.463 |         13.127 | 11.617,  6.740,  4.248
+   10.0 |     0.1535 |   3.867 |         15.290 | 12.164,  5.842,  3.516
+
+bubble
+------
+  Linear angular frequency, dimensionless: omega_0^2 = 3 kappa (1 +
+  We) - We. For R0 = 0.5 mm at 5 m depth, f_M = 7939.23 Hz.
+

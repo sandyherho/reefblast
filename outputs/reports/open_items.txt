@@ -1,0 +1,45 @@
+Open items and negative results
+===============================
+
+a claim that was tested and had to be corrected
+-----------------------------------------------
+  The project began from the expectation that the water-canopy
+  reflection coefficient changes sign at a critical void fraction. It
+  does not: any free gas lowers the canopy impedance below water, so
+  that coefficient is negative for every alpha > 0. The mechanism that
+  survives is at the back face of the skeleton, where a low-impedance
+  canopy makes the reflection closer to a free surface; tension
+  appears only when Z_c/Z_s < tanh(delta).
+
+results that depend on an unmeasured quantity
+---------------------------------------------
+  Every canopy effect requires void fractions of order 1e-3 or more.
+  Diel oxygen bubbles are documented acoustically in seagrass meadows,
+  but no void-fraction measurement in a coral canopy is known to the
+  authors. The diel results are scenarios, not predictions for a site.
+
+assumptions carried by the whole construction
+---------------------------------------------
+  Normal incidence at every range. Canopy impedance frozen at the
+  secant value for the incident peak, for both loading and unloading,
+  and for the canopy above and below the plate. No cavitation cutoff:
+  the surface-reflected rarefaction is omitted because bulk cavitation
+  caps it near -p0, well below the assumed tensile strength. Skeleton
+  treated as an acoustic medium with no shear. Damage judged by a
+  single peak stress, not a cumulative criterion.
+
+the two-dimensional runs
+------------------------
+  Line source in plane strain; the volume rate is the half-integral of
+  the target pulse, which reproduces the pulse only in the far field
+  and leaves a slowly decaying negative near field around the charge.
+  The runs are used for patterns and for the tension-to-compression
+  ratio, which is independent of source amplitude, and never for
+  thresholds.
+
+not attempted
+-------------
+  Fish mortality, the explosion gas bubble and its migration,
+  fragmentation and rubble mobility, repeated blasting, and any
+  calibration against field observations.
+
