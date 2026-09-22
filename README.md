@@ -12,7 +12,7 @@ canopy changes the loading that an improvised fishing charge delivers to
 reef skeleton.
 
 **Authors:** Sandy H. S. Herho, Rizki D. Permana, Iwan P. Anwar,
-Alfita P. Handayani, Faruq Khadami, Karina A. Sujatmiko, Dasapta E. Irawan
+Alfita P. Handayani, Faruq Khadami, Karina A. Sujatmiko, Sri Y. Cahyarini, and Dasapta E. Irawan
 
 <p align="center">
   <img src="outputs/animations/anim01_diptych.gif" width="100%" alt="one charge over a gas-poor and a gas-rich canopy"><br>
@@ -105,6 +105,12 @@ outputs/     figures (PDF, 600 dpi PNG), animations (GIF),
 ```
 
 ## Limitations
+
+The canopy void fraction is a free parameter; no measurement in a coral canopy is known to the authors. Normal incidence, a frozen secant canopy impedance, and a shear-free skeleton are assumed, and skeletal constants are illustrative, so every threshold scales with them. The 2D line source is exact only in the far field and is used for amplitude-free ratios, never for thresholds. Details are in `outputs/reports/open_items.txt`.
+
+
+
+
 
 The canopy void fraction is a free parameter; no measurement in a coral
 canopy is known to the authors. Normal incidence, a frozen secant canopy
