@@ -1,5 +1,4 @@
-# Supplementary Materials "Spall Failure of Coral Skeleton beneath Gas-Laden Canopies:
-An Idealized Blast-Fishing Model"
+# Supplementary Materials "Spall Failure of Coral Skeleton beneath Gas-Laden Canopies:An Idealized Blast-Fishing Model"
 
 [![DOI](https://zenodo.org/badge/1380313579.svg)](https://doi.org/10.5281/zenodo.22884080)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org)
