@@ -11,7 +11,7 @@ Supplementary code for a reduced-order model of how free gas in a coral
 canopy changes the loading that an improvised fishing charge delivers to
 reef skeleton.
 
-**Authors:** Sandy H. S. Herho, Rizki D. Permana, Iwan P. Anwar,
+**Authors:** Sandy H. S. Herho, Agus W. Jatmiko, Rizki D. Permana, Iwan P. Anwar,
 Alfita P. Handayani, Faruq Khadami, Karina A. Sujatmiko, Sri Y. Cahyarini, and Dasapta E. Irawan
 
 <p align="center">

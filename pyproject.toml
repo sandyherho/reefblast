@@ -4,13 +4,14 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "reefblast"
-version = "0.1.0"
+version = "0.1.3"
 description = "Blast-fishing shock loading of gas-laden coral canopies"
 readme = "README.md"
 requires-python = ">=3.10"
 license = { file = "LICENSE" }
 authors = [
     { name = "Sandy H. S. Herho" },
+    { name = "Agus W. Jatmiko"},    
     { name = "Rizki D. Permana" },
     { name = "Iwan P. Anwar" },
     { name = "Alfita P. Handayani" },
