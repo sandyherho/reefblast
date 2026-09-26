@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "reefblast"
-version = "0.1.3"
+version = "0.1.4"
 description = "Blast-fishing shock loading of gas-laden coral canopies"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -17,6 +17,8 @@ authors = [
     { name = "Alfita P. Handayani" },
     { name = "Faruq Khadami" },
     { name = "Karina A. Sujatmiko" },
+    { name = "Rusmawan Suwarman"},
+    { name = "Deny J. Puradimaja"},
     { name = "Dasapta E. Irawan" }
 ]
 keywords = ["blast fishing", "coral reef", "underwater explosion",

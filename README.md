@@ -12,7 +12,7 @@ canopy changes the loading that an improvised fishing charge delivers to
 reef skeleton.
 
 **Authors:** Sandy H. S. Herho, Agus W. Jatmiko, Rizki D. Permana, Iwan P. Anwar,
-Alfita P. Handayani, Faruq Khadami, Karina A. Sujatmiko, Sri Y. Cahyarini, and Dasapta E. Irawan
+Alfita P. Handayani, Faruq Khadami, Karina A. Sujatmiko, Rusmawan Suwarman, Deny J. Puradimaja, and Dasapta E. Irawan
 
 <p align="center">
   <img src="outputs/animations/anim01_diptych.gif" width="100%" alt="one charge over a gas-poor and a gas-rich canopy"><br>
